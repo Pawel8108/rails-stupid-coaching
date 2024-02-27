@@ -1,13 +1,21 @@
+<!-- Display a heading with the text "Stupid Coach😁" -->
 <h1>Stupid Coach😁</h1>
 
+<!-- Start a blockquote for the user's question -->
 <div class="me"><blockquote class="blockquote">
+  <!-- Display the user's question -->
   <p><%= @question%></p>
+  <!-- Footer for the blockquote -->
   <footer class="blockquote-footer">You</footer>
 </blockquote></div>
 
+<!-- Start a blockquote for the coach's answer -->
 <div class="coach"><blockquote class="blockquote">
+  <!-- Display the coach's answer -->
   <p><%= @answer%></p>
+  <!-- Footer for the blockquote -->
   <footer class="blockquote-footer">Coach</footer>
 </blockquote></div>
 
+<!-- Link to ask another question -->
 <div class="backlink"><%= link_to "Ask another question", ask_path %></div>
